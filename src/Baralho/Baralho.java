@@ -6,7 +6,6 @@ import java.util.List;
 
 public class Baralho {
     public List<Carta> Cartas = new ArrayList<>();
-    Carta carta = new Carta();
 
     public Baralho(){
         montar();
@@ -16,7 +15,7 @@ public class Baralho {
 
     private void montar(){
         for (Naipe n: Naipe.values()) {
-            for (Valor v: Valor.values() ) {
+            for (Valor v: Valor.values()) {
                 Carta carta = new Carta();
                 carta.setNaipe(n);
                 carta.setValor(v);
